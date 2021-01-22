@@ -26,6 +26,7 @@
     "resolve": "~1.19.0"
   },
   "devDependencies": {
+    "@microsoft/api-extractor-model": "^7.12.1",
     "@rushstack/eslint-config": "~2.3.1",
     "@rushstack/heft-node-rig": "0.1.28",
     "@rushstack/heft": "^0.22.3",
@@ -33,10 +34,12 @@
     "@types/jju": "1.4.1",
     "@types/node": "10.17.13",
     "@types/resolve": "1.17.1",
-    "eslint": "~7.12.1"
+    "eslint": "~7.12.1",
+    "word-wrap": "~1.2.3"
   },
   "scripts": {
     "build": "heft test --clean",
-    "watch": "heft test --clean --watch"
+    "watch": "heft test --clean --watch",
+    "generate-json": "node lib/scripts/generate-tsdoc-standard.js"
   }
 }
