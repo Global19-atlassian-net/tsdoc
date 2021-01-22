@@ -1,4 +1,5 @@
 dependencies:
+  '@microsoft/api-extractor-model': 7.12.1
   '@rush-temp/api-demo': 'file:projects/api-demo.tgz'
   '@rush-temp/eslint-plugin-tsdoc': 'file:projects/eslint-plugin-tsdoc.tgz_typescript@3.9.7'
   '@rush-temp/tsdoc': 'file:projects/tsdoc.tgz_typescript@3.9.7'
@@ -40,6 +41,7 @@ dependencies:
   typescript: 3.9.7
   webpack: 4.44.2
   webpack-bundle-analyzer: 3.4.1
+  word-wrap: 1.2.3
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
@@ -575,6 +577,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-TxoAbL/lauS3k/brBWVsiQTnyHBwHrAGJhTuiD0tWS/eu4dLNULchcSQfcOaFS91OgDEz4lMMbClgChFuo+53Q==
+  /@microsoft/api-extractor-model/7.12.1:
+    dependencies:
+      '@microsoft/tsdoc': 0.12.24
+      '@rushstack/node-core-library': 3.35.2
+    dev: false
+    resolution:
+      integrity: sha512-Hw+kYfUb1gt6xPWGFW8APtLVWeNEWz4JE6PbLkSHw/j+G1hAaStzgxhBx3GOAWM/G0SCDGVJOpd5YheVOyu/KQ==
   /@microsoft/api-extractor/7.12.0:
     dependencies:
       '@microsoft/api-extractor-model': 7.12.0
@@ -609,6 +618,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-j+9OJ0A0buZZaUn6NxeHUVpoa05tY2PgVs7kXJhJQiKRB0G1zQqbJxer3T7jWtzpqQWP89OBDluyIeyTsMk8Sg==
+  /@microsoft/tsdoc/0.12.24:
+    dev: false
+    resolution:
+      integrity: sha512-Mfmij13RUTmHEMi9vRUhMXD7rnGR2VvxeNYtaGtaJ4redwwjT4UXYJ+nzmVJF7hhd4pn/Fx5sncDKxMVFJSWPg==
   /@nodelib/fs.scandir/2.1.3:
     dependencies:
       '@nodelib/fs.stat': 2.0.3
@@ -765,6 +778,20 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ZwnXp2loZyVUgrZ+fEKKF/EHl0ikcy6SCsd34ewYXoEAs0XWIy2VS9bemrfaFtd2VzJ/G/ZbP3xHkqRnUPKJ4Q==
+  /@rushstack/node-core-library/3.35.2:
+    dependencies:
+      '@types/node': 10.17.13
+      colors: 1.2.5
+      fs-extra: 7.0.1
+      import-lazy: 4.0.0
+      jju: 1.4.0
+      resolve: 1.17.0
+      semver: 7.3.2
+      timsort: 0.3.0
+      z-schema: 3.18.4
+    dev: false
+    resolution:
+      integrity: sha512-SPd0uG7mwsf3E30np9afCUhtaM1SBpibrbxOXPz82KWV6SQiPUtXeQfhXq9mSnGxOb3WLWoSDe7AFxQNex3+kQ==
   /@rushstack/rig-package/0.2.8:
     dependencies:
       '@types/node': 10.17.13
@@ -8918,7 +8945,7 @@ packages:
     dev: false
     name: '@rush-temp/api-demo'
     resolution:
-      integrity: sha512-PBbhFUIcc6+y+4bjne5SHkR7xwZDBbaNdFedsQTsfZmdo3wewaVrnywsOdWc6BNrqD+/+dAMNSKC3WbhM51Zvw==
+      integrity: sha512-XYxaGVrO/3grVr2OrpCTttRe65eUQCpKFxWNhocWit8NuczHKN393pbmEnkxsXLYGBxry/A12kxCRGmHHjg1bw==
       tarball: 'file:projects/api-demo.tgz'
     version: 0.0.0
   'file:projects/eslint-plugin-tsdoc.tgz_typescript@3.9.7':
@@ -8937,11 +8964,12 @@ packages:
     peerDependencies:
       typescript: '*'
     resolution:
-      integrity: sha512-RVitJBzq5F1UzaTKCtWk6i/5jxyVp3dgsZa8gbvfSTalANV6d1OndP/yZ+9L3jKclIzK8pQI7naaL9wukF8CYw==
+      integrity: sha512-cff14u6fxYhBHYiEU/SCdmEN6jME+i85h6VW3EZ7E5Qyu2ZgqS/4oBBv0y/Od56+ikJjcZCLlUU5Znp+emGs2Q==
       tarball: 'file:projects/eslint-plugin-tsdoc.tgz'
     version: 0.0.0
   'file:projects/tsdoc-config.tgz_typescript@3.9.7':
     dependencies:
+      '@microsoft/api-extractor-model': 7.12.1
       '@rushstack/eslint-config': 2.3.1_eslint@7.12.1+typescript@3.9.7
       '@rushstack/heft': 0.22.3
       '@rushstack/heft-node-rig': 0.1.28_@rushstack+heft@0.22.3
@@ -8953,13 +8981,14 @@ packages:
       eslint: 7.12.1
       jju: 1.4.0
       resolve: 1.19.0
+      word-wrap: 1.2.3
     dev: false
     id: 'file:projects/tsdoc-config.tgz'
     name: '@rush-temp/tsdoc-config'
     peerDependencies:
       typescript: '*'
     resolution:
-      integrity: sha512-9ITay0Wh9NsfMlj+rnkyVmni4WlwBE9V9x4r2T8xSOxL8RVXFaTBZcTkrML3WVGa1chmy2ezMcaVMHdqxpl+zg==
+      integrity: sha512-7TH4IMfu/6O+OdrBZTDTQfmm37BWhaIPl6bGAB+uOMDRIxgvDSSfyMs52PVW7h3rT0Zmpl2VSreEQqkSbJhRsg==
       tarball: 'file:projects/tsdoc-config.tgz'
     version: 0.0.0
   'file:projects/tsdoc-playground.tgz':
@@ -8992,7 +9021,7 @@ packages:
     dev: false
     name: '@rush-temp/tsdoc-playground'
     resolution:
-      integrity: sha512-7PXfzfYhT7d//rcwWTCIW4HWLxVTxDdBm7xpEsI1GOi6ddCRAlzJsqWW0mdVyfw0Py1XQ+M+om5AcuoZOP3Zvw==
+      integrity: sha512-o6FlSkzbhf+canp7N8zi8TammNPfy6v9HvDEsADZ6poUEOjEutD33D1sC5Hb4OR4f1hhieSxiQ8ZK+oKgXFGuA==
       tarball: 'file:projects/tsdoc-playground.tgz'
     version: 0.0.0
   'file:projects/tsdoc.tgz_typescript@3.9.7':
@@ -9011,7 +9040,9 @@ packages:
       integrity: sha512-lQ8d20HPdZKkFSejWMVPxe9OOaUkl6Kl8ToIQtLYamNDVHs3Cgr+Wk9Z1xsg/cq1jIsKbc0TYig9WfhP5M3WTA==
       tarball: 'file:projects/tsdoc.tgz'
     version: 0.0.0
+registry: ''
 specifiers:
+  '@microsoft/api-extractor-model': ^7.12.1
   '@rush-temp/api-demo': 'file:./projects/api-demo.tgz'
   '@rush-temp/eslint-plugin-tsdoc': 'file:./projects/eslint-plugin-tsdoc.tgz'
   '@rush-temp/tsdoc': 'file:./projects/tsdoc.tgz'
@@ -9053,3 +9084,4 @@ specifiers:
   typescript: ~3.9.7
   webpack: ~4.44.2
   webpack-bundle-analyzer: ~3.4.1
+  word-wrap: ~1.2.3
