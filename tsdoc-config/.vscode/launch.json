@@ -14,5 +14,13 @@
       "console": "integratedTerminal",
       "sourceMaps": true
     },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug generate-tsdoc-standard",
+      "program": "${workspaceFolder}/lib/scripts/generate-tsdoc-standard.js",
+      "cwd": "${workspaceFolder}",
+      "sourceMaps": true
+    },
   ]
 }

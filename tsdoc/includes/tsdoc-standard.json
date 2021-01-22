@@ -1,0 +1,288 @@
+// THIS IS A MACHINE-GENERATED FILE.  DO NOT MODIFY.
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+
+  "tagDefinitions": [
+    // (Discretionary)
+    //
+    // Suggested meaning: Designates that an API item's release stage is "alpha". It is
+    // intended to be used by third-party developers eventually, but has not yet been
+    // released. The tooling may trim the declaration from a public release.
+    //
+    {
+      "tagName": "@alpha",
+      "syntaxKind": "modifier"
+    },
+
+    // (Discretionary)
+    //
+    // Suggested meaning: Designates that an API item's release stage is "beta". It has
+    // been released to third-party developers experimentally for the purpose of
+    // collecting feedback. The API should not be used in production, because its
+    // contract may change without notice. The tooling may trim the declaration from a
+    // public release, but may include it in a developer preview release.
+    //
+    {
+      "tagName": "@beta",
+      "syntaxKind": "modifier"
+    },
+
+    // (Extended)
+    //
+    // This block tag is used to document the default value for a field or property, if
+    // a value is not assigned explicitly.
+    //
+    {
+      "tagName": "@defaultValue",
+      "syntaxKind": "block"
+    },
+
+    // (Extended)
+    //
+    // ECMAScript decorators are sometimes an important part of an API contract.
+    // However, today the TypeScript compiler does not represent decorators in the
+    // .d.ts output files used by API consumers. The `@decorator` tag provides a
+    // workaround, enabling a decorator expressions to be quoted in a doc comment.
+    //
+    {
+      "tagName": "@decorator",
+      "syntaxKind": "block"
+    },
+
+    // (Core)
+    //
+    // This block tag communicates that an API item is no longer supported and may be
+    // removed in a future release. The `@deprecated` tag is followed by a sentence
+    // describing the recommended alternative. It recursively applies to members of the
+    // container. For example, if a class is deprecated, then so are all of its
+    // members.
+    {
+      "tagName": "@deprecated",
+      "syntaxKind": "block"
+    },
+
+    // (Extended)
+    //
+    // When applied to a class or interface property, this indicates that the property
+    // returns an event object that event handlers can be attached to. The
+    // event-handling API is implementation-defined, but typically the property return
+    // type would be a class with members such as `addHandler()` and `removeHandler()`.
+    // A documentation tool can display such properties under an "Events" heading
+    // instead of the usual "Properties" heading.
+    {
+      "tagName": "@eventProperty",
+      "syntaxKind": "modifier"
+    },
+
+    // (Extended)
+    //
+    // Indicates a documentation section that should be presented as an example
+    // illustrating how to use the API. It may include a code sample.
+    {
+      "tagName": "@example",
+      "syntaxKind": "block"
+    },
+
+    // (Discretionary)
+    //
+    // Suggested meaning: Same semantics as `@beta`, but used by tools that don't
+    // support an `@alpha` release stage.
+    //
+    {
+      "tagName": "@experimental",
+      "syntaxKind": "modifier"
+    },
+
+    // (Extended)
+    //
+    // This inline tag is used to automatically generate an API item's documentation by
+    // copying it from another API item. The inline tag parameter contains a reference
+    // to the other item, which may be an unrelated class, or even an import from a
+    // separate NPM package.
+    //
+    {
+      "tagName": "@inheritDoc",
+      "syntaxKind": "inline"
+    },
+
+    // (Discretionary)
+    //
+    // Suggested meaning: Designates that an API item is not planned to be used by
+    // third-party developers. The tooling may trim the declaration from a public
+    // release. In some implementations, certain designated packages may be allowed to
+    // consume internal API items, e.g. because the packages are components of the same
+    // product.
+    //
+    {
+      "tagName": "@internal",
+      "syntaxKind": "modifier"
+    },
+
+    // (Core)
+    //
+    // The `{@label}` inline tag is used to label a declaration, so that it can be
+    // referenced using a selector in the TSDoc declaration reference notation.
+    //
+    {
+      "tagName": "@label",
+      "syntaxKind": "inline"
+    },
+
+    // (Core)
+    //
+    // The `{@link}` inline tag is used to create hyperlinks to other pages in a
+    // documentation system or general internet URLs. In particular, it supports
+    // expressions for referencing API items.
+    //
+    {
+      "tagName": "@link",
+      "syntaxKind": "inline"
+    },
+
+    // (Extended)
+    //
+    // This modifier has similar semantics to the `override` keyword in C# or Java. For
+    // a member function or property, explicitly indicates that this definition is
+    // overriding (i.e. redefining) the definition inherited from the base class. The
+    // base class definition would normally be marked as `virtual`.
+    //
+    {
+      "tagName": "@override",
+      "syntaxKind": "modifier"
+    },
+
+    // (Core)
+    //
+    // Used to indicate a doc comment that describes an entire NPM package (as opposed
+    // to an individual API item belonging to that package). The
+    // `@packageDocumentation` comment is found in the *.d.ts file that acts as the
+    // entry point for the package, and it should be the first `/**` comment
+    // encountered in that file. A comment containing a `@packageDocumentation` tag
+    // should never be used to describe an individual API item.
+    {
+      "tagName": "@packageDocumentation",
+      "syntaxKind": "modifier"
+    },
+
+    // (Core)
+    //
+    // Used to document a function parameter. The `@param` tag is followed by a
+    // parameter name, followed by a hyphen, followed by a description. The TSDoc
+    // parser recognizes this syntax and will extract it into a DocParamBlock node.
+    {
+      "tagName": "@param",
+      "syntaxKind": "block"
+    },
+
+    // (Core)
+    //
+    // Starts a section of additional documentation content that is not intended for a
+    // public audience. A tool must omit this entire section from the API reference web
+    // site, generated *.d.ts file, and any other outputs incorporating the content.
+    {
+      "tagName": "@privateRemarks",
+      "syntaxKind": "block"
+    },
+
+    // (Discretionary)
+    //
+    // Suggested meaning: Designates that an API item's release stage is "public". It
+    // has been officially released to third-party developers, and its signature is
+    // guaranteed to be stable (e.g. following Semantic Versioning rules).
+    //
+    {
+      "tagName": "@public",
+      "syntaxKind": "modifier"
+    },
+
+    // (Extended)
+    //
+    // This modifier tag indicates that an API item should be documented as being
+    // read-only, even if the TypeScript type system may indicate otherwise. For
+    // example, suppose a class property has a setter function that always throws an
+    // exception explaining that the property cannot be assigned; in this situation,
+    // the `@readonly` modifier can be added so that the property is shown as read-only
+    // in the documentation.
+    //
+    {
+      "tagName": "@readonly",
+      "syntaxKind": "modifier"
+    },
+
+    // (Core)
+    //
+    // The main documentation for an API item is separated into a brief "summary"
+    // section, optionally followed by a more detailed "remarks" section. On a
+    // documentation web site, index pages (e.g. showing members of a class) will show
+    // only the brief summaries, whereas a detail pages (e.g. describing a single
+    // member) will show the summary followed by the remarks. The `@remarks` block tag
+    // ends the summary section, and begins the remarks section for a doc comment.
+    {
+      "tagName": "@remarks",
+      "syntaxKind": "block"
+    },
+
+    // (Core)
+    //
+    // Used to document the return value for a function.
+    {
+      "tagName": "@returns",
+      "syntaxKind": "block"
+    },
+
+    // (Extended)
+    //
+    // This modifier has similar semantics to the `sealed` keyword in C# or Java. For a
+    // class, indicates that subclasses must not inherit from the class. For a member
+    // function or property, indicates that subclasses must not override (i.e.
+    // redefine) the member.
+    //
+    {
+      "tagName": "@sealed",
+      "syntaxKind": "modifier"
+    },
+
+    // (Extended)
+    //
+    // Used to build a list of references to an API item or other resource that may be
+    // related to the current item.
+    //
+    {
+      "tagName": "@see",
+      "syntaxKind": "block"
+    },
+
+    // (Extended)
+    //
+    // Used to document an exception type that may be thrown by a function or property.
+    //
+    {
+      "tagName": "@throws",
+      "syntaxKind": "block"
+    },
+
+    // (Core)
+    //
+    // Used to document a generic parameter. The `@typeParam` tag is followed by a
+    // parameter name, followed by a hyphen, followed by a description. The TSDoc
+    // parser recognizes this syntax and will extract it into a DocParamBlock node.
+    {
+      "tagName": "@typeParam",
+      "syntaxKind": "block"
+    },
+
+    // (Extended)
+    //
+    // This modifier has similar semantics to the `virtual` keyword in C# or Java. For
+    // a member function or property, explicitly indicates that subclasses may override
+    // (i.e. redefine) the member.
+    //
+    {
+      "tagName": "@virtual",
+      "syntaxKind": "modifier"
+    }
+  ],
+
+  // Note: Adding at least one entry to this list enables warnings for unsupported tags
+  "supportForTags": {}
+}
